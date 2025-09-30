@@ -81,4 +81,4 @@ O vídeo com a explicação da pesquisa, código e exemplos práticos está disp
 ## 📑 Documentação Extra
 
 - 📄 [Relatório – Pesquisa sobre Árvores Multiway](Documentação/Relatório.md)
-- 📝 [Exemplos práticos da Árvore B](ExemplosArvoreB.md)
+- 📝 [Exemplos práticos da Árvore B](Documentação/ExemploArvoreB.md)
