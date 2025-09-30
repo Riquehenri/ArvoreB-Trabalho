@@ -3,7 +3,7 @@
 ## 📌 Sobre o Projeto
 
 Este repositório contém a pesquisa, implementação e documentação do trabalho acadêmico sobre **Árvores Multiway**, com foco na **Árvore B**.  
-A atividade foi desenvolvida em grupo para a disciplina de Estruturas de Dados, seguindo as restrições do professor (**sem uso de estruturas de dados prontas do Java** como `ArrayList`, `Vector`, `HashMap`, etc.).
+A atividade foi desenvolvida em grupo para a disciplina de Resolução de Problemas Estruturados em Computação.
 
 ---
 
