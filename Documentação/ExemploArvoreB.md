@@ -2,37 +2,54 @@
 
 ## Sequência de Inserções
 
-Inserir na ordem: **10, 20, 5, 6, 12, 30, 7, 17**
+A sequência de chaves a ser inserida é: **15, 3, 22, 8, 16, 5, 28, 12, 30**.
 
-### Passo a Passo
+---
 
-1. Inserir 10, 20, 5 → nó com [5, 10, 20]
-2. Inserir 6 → nó excede capacidade → ocorre **split**
-   - Elemento mediano sobe para a raiz.
-   - Forma dois nós filhos.
-3. Continuar inserindo 12, 30, 7, 17
-   - Novos splits conforme nós fiquem cheios
-   - Mantém todas as folhas no mesmo nível
+## Passo a Passo das Operações
+
+### Inserções Iniciais
+
+- Inserir **15, 3, 22** → O nó raiz se torna `[3, 15, 22]`.
+
+### Ocorrência do Split
+
+- Inserir **8**. Assumindo uma ordem que leva a um nó cheio (e.g., $2t-1=4$ chaves), o nó excede a capacidade máxima.
+- Ocorre o **split**:
+  - O elemento mediano (**15**) sobe para a **nova raiz**.
+  - Formam-se dois nós filhos:
+    - Filho Esquerdo: `[3, 8]`
+    - Filho Direito: `[22]`
+
+### Inserções Contínuas
+
+- Continuar inserindo **16, 5, 28, 12, 30**.
+  - **16** é inserido no nó filho à direita de 15.
+  - **5** é inserido no nó esquerdo.
+  - **28** e **30** são inseridos no nó direito.
+  - **12** é inserido no nó apropriado.
+- **Novos splits** ocorrerão à medida que os nós fiquem cheios.
+- A árvore se reorganiza mantendo **todas as folhas no mesmo nível**.
 
 ---
 
 ## Busca
 
-- `buscar(12)` → retorna nó que contém 12 (existe)
-- `buscar(99)` → retorna `null` (não existe)
+- `buscar(16)` → Retorna o nó que contém **16** (chave encontrada).
+- `buscar(99)` → Retorna **null** (chave não existe).
 
 ---
 
-## Remoções
+## Remoções (Conceitual)
 
-- `remover(6)` → remoção simples em folha
-- `remover(17)` → remoção simples em folha
-- Em casos mais complexos, poderia ocorrer **merge** ou redistribuição de chaves entre nós irmãos
+- `remover(5)` → **Remoção simples** em um nó folha.
+- `remover(28)` → **Remoção simples** em um nó folha.
+- Em cenários onde o nó atingiria o mínimo de chaves, operações de **merge** (fusão) ou **redistribuição** (empréstimo) de chaves entre nós irmãos seriam executadas.
 
 ---
 
 ## Observações de Balanceamento
 
-- Depois de cada inserção e remoção, a Árvore B mantém seu equilíbrio.
-- Os splits e merges são mecanismos essenciais para manter a propriedade de que todas as folhas estejam no mesmo nível.
-- Mesmo com remoções, a estrutura se reorganiza para preservar as propriedades de busca balanceada.
+- **Balanceamento Constante:** Depois de cada inserção e remoção, a Árvore B **mantém seu equilíbrio**.
+- **Mecanismos Essenciais:** Os **splits** e **merges** são cruciais para garantir que **todas as folhas estejam no mesmo nível**, o que é vital para a eficiência de acesso em estruturas de disco.
+- Mesmo com remoções, a estrutura se reorganiza para preservar as propriedades de **busca balanceada**.

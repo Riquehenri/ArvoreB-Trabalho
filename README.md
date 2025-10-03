@@ -28,11 +28,6 @@ A atividade foi desenvolvida em grupo para a disciplina de Estruturas de Dados, 
 │ ├── Relatorio.md # Pesquisa sobre Árvores Multiway
 │ └── ExemplosArvoreB.md # Passo a passo de operações na Árvore B
 │
-├── /img
-│ ├── arvore-insercao.png # Exemplo visual de inserção
-│ ├── arvore-split.png # Exemplo após split
-│ └── arvore-remocao.png # Exemplo após remoção
-│
 ├── README.md # Este arquivo
 ```
 
@@ -52,7 +47,7 @@ As principais operações implementadas foram:
 
 ### Inserindo as chaves:
 
-10, 20, 5, 6, 12, 30, 7, 17
+15, 3, 22, 8, 16, 5, 28, 12, 30
 A árvore cresce de forma balanceada.
 
 > Quando um nó fica cheio, ocorre **split**.
@@ -60,15 +55,15 @@ A árvore cresce de forma balanceada.
 ### Busca:
 
 ```scss
-Busca(12) -> Encontrado
+Busca(16) -> Encontrado
 Busca(99) -> Não encontrado
 ```
 
 ### Remoção:
 
 ```scss
-Removendo 6
-Removendo 17
+Removendo 5
+Removendo 28
 ```
 
 ## 🎥 Vídeo Explicativo
