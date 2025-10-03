@@ -28,11 +28,6 @@ A atividade foi desenvolvida em grupo para a disciplina de Resolução de Proble
 │ ├── Relatorio.md # Pesquisa sobre Árvores Multiway
 │ └── ExemplosArvoreB.md # Passo a passo de operações na Árvore B
 │
-├── /img
-│ ├── arvore-insercao.png # Exemplo visual de inserção
-│ ├── arvore-split.png # Exemplo após split
-│ └── arvore-remocao.png # Exemplo após remoção
-│
 ├── README.md # Este arquivo
 ```
 
