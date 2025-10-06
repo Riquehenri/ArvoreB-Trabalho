@@ -68,8 +68,8 @@ Removendo 28
 
 ## 🎥 Vídeo Explicativo
 
-O vídeo com a explicação da pesquisa, código e exemplos práticos está disponível em:
-👉 [Link para o YouTube](Link para o YouTube)
+O vídeo com a explicação da pesquisa, código e exemplos práticos está disponível em:  
+👉 [Assista no YouTube](https://youtu.be/GhyPf4F0PA8)
 
 ---
 
